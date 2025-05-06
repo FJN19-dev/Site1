@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Scripts</title>
+  <style>
+    body { margin: 0; font-family: 'Segoe UI', sans-serif; background: linear-gradient(to right, #1a0d2b, #2e1458); color: #fff; }
+    header, footer { background: #1c0e35; padding: 20px; text-align: center; border-bottom: 2px solid #b47bff; }
+    header h1 { margin: 0; color: #b47bff; }
+    nav a { color: #fff; margin: 0 15px; text-decoration: none; }
+    main { padding: 40px 20px; max-width: 900px; margin: auto; }
+    .script-box { background: #2e1458; border-radius: 8px; padding: 15px; margin-bottom: 20px; }
+    .copy-btn { margin-top: 10px; background: #b47bff; color: #1a0d2b; padding: 8px 16px; border: none; border-radius: 5px; cursor: pointer; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Scripts</h1>
+    <nav>
+      <a href="index.html">Sobre o Servidor</a>
+      <a href="executores.html">Executores</a>
+      <a href="scripts.html">Scripts</a>
+    </nav>
+  </header>
+  <main>
+    <div class="script-box">
+      <strong>Slayer Hub | Blox</strong><br>[Tem nada]<br>
+      <button class="copy-btn" onclick="copyText('[Tem nada]')">Copiar</button>
+    </div>
+    <div class="script-box">
+      <strong>Slayer Fisch</strong><br>[Tem nada]<br>
+      <button class="copy-btn" onclick="copyText('[Tem nada]')">Copiar</button>
+    </div>
+    <div class="script-box">
+      <strong>Slayer Brok</strong><br>[Tem nada]<br>
+      <button class="copy-btn" onclick="copyText('[Tem nada]')">Copiar</button>
+    </div>
+    <div class="script-box">
+      <strong>Slayer Universal</strong><br>[Tem nada]<br>
+      <button class="copy-btn" onclick="copyText('[Tem nada]')">Copiar</button>
+    </div>
+    <div class="script-box">
+      <strong>Slayer Blue</strong><br>
+      <code id="script-blue">loadstring(game:HttpGet("https://raw.githubusercontent.com/FJN19-dev/BlueLock/refs/heads/main/SlayerHub"))()</code><br>
+      <button class="copy-btn" onclick="copyText(document.getElementById('script-blue').innerText)">Copiar</button>
+    </div>
+  </main>
+  <footer>
+    <p>© 2025 Scripts Slayers</p>
+  </footer>
+  <script>
+    function copyText(text) {
+      navigator.clipboard.writeText(text).then(() => alert("Copiado!"));
+    }
+  </script>
+</body>
+</html>
